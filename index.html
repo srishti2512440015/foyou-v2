@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foyou</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- WHITE TOP BAR -->
+
+<header class="top-header">
+
+    <div class="topbar">
+
+        <button class="icon-btn" onclick="openSearch()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="icon-btn" onclick="openLogin()">
+            <i class="fa-regular fa-user"></i>
+        </button>
+
+        <button class="icon-btn" onclick="openOrders()">
+            <i class="fa-solid fa-box"></i>
+        </button>
+
+    </div>
+
+</header>
+
+<!-- PINK HERO -->
+
+<section class="hero">
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+</section>
+
+<!-- FIGURES -->
+
+<section class="showcase">
+
+    <div class="dolls">
+
+        <div class="doll left" onclick="jump(this)">
+            <img src="images/left.png" alt="">
+        </div>
+
+        <div class="doll center" onclick="jump(this)">
+            <img src="images/center.png" alt="">
+        </div>
+
+        <div class="doll right" onclick="jump(this)">
+            <img src="images/right.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- OVERLAY -->
+
+<div class="overlay" id="overlay" onclick="closeEverything()"></div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar" id="sidebar">
+    <div id="sidebar-content"></div>
+</div>
+
+<!-- LOGIN -->
+
+<div class="login-modal" id="loginModal">
+
+    <h2>Login</h2>
+
+    <input type="email" placeholder="Email">
+
+    <input type="password" placeholder="Password">
+
+    <button class="login-btn">Login</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
